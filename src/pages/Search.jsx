@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import PostCard from '../components/PostCard';
 
-const BACKEND_URL = 'https://blog-site-api-tn0y.onrender.com';
+const BACKEND_URL = 'https://api-zv5u.onrender.com';
 
 export default function Search() {
   const [sidebarData, setSidebarData] = useState({

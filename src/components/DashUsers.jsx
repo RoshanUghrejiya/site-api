@@ -14,7 +14,7 @@ export default function DashUsers() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await fetch('https://blog-site-api-tn0y.onrender.com/api/user/getusers');
+        const res = await fetch('https://api-zv5u.onrender.com/api/user/getusers');
         const data = await res.json();
         if (res.ok) {
           setUsers(data.users);
@@ -35,7 +35,7 @@ export default function DashUsers() {
   const handleShowMore = async () => {
     const startIndex = users.length;
     try {
-      const res = await fetch(`https://blog-site-api-tn0y.onrender.com/api/user/getusers?startIndex=${startIndex}`);
+      const res = await fetch(`https://api-zv5u.onrender.com/api/user/getusers?startIndex=${startIndex}`);
       const data = await res.json();
       if (res.ok) {
         setUsers((prev) => [...prev, ...data.users]);
@@ -50,7 +50,7 @@ export default function DashUsers() {
 
   const handleDeleteUser = async () => {
     try {
-      const res = await fetch(`https://blog-site-api-tn0y.onrender.com/api/user/delete/${userIdToDelete}`, {
+      const res = await fetch(`https://api-zv5u.onrender.com/api/user/delete/${userIdToDelete}`, {
         method: 'DELETE',
         credentials: 'include',
       });

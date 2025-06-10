@@ -9,7 +9,7 @@ import {
 import { Button, Table } from 'flowbite-react';
 import { Link } from 'react-router-dom';
 
-const BACKEND_URL = 'https://blog-site-api-tn0y.onrender.com';
+const BACKEND_URL = 'https://api-zv5u.onrender.com';
 
 export default function DashboardComp() {
   const [users, setUsers] = useState([]);

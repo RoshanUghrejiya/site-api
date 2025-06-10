@@ -9,7 +9,7 @@ import {
 } from '../redux/user/userSlice';
 import OAuth from '../components/OAuth';
 
-const BACKEND_URL = 'https://blog-site-api-tn0y.onrender.com';
+const BACKEND_URL = 'https://api-zv5u.onrender.com';
 
 export default function SignIn() {
   const [formData, setFormData] = useState({});

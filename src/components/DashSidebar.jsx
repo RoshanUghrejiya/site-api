@@ -29,7 +29,7 @@ export default function DashSidebar() {
 
   const handleSignout = async () => {
     try {
-      const res = await fetch('https://blog-site-api-tn0y.onrender.com/api/user/signout', {
+      const res = await fetch('https://api-zv5u.onrender.com/api/user/signout', {
         method: 'POST',
         credentials: 'include',
       });

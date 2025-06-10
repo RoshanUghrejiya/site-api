@@ -21,7 +21,7 @@ export default function CreatePost() {
   const [publishError, setPublishError] = useState(null);
   const navigate = useNavigate();
 
-  const BACKEND_URL = 'https://blog-site-api-tn0y.onrender.com';
+  const BACKEND_URL = 'https://api-zv5u.onrender.com';
 
   const handleUploadImage = async () => {
     try {

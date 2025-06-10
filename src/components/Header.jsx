@@ -91,7 +91,7 @@ export default function Header() {
   const [isSticky, setIsSticky] = useState(false);
   const headerRef = useRef(null);
 
-  const BACKEND_URL = 'https://blog-site-api-tn0y.onrender.com';
+  const BACKEND_URL = 'https://api-zv5u.onrender.com';
 
   useEffect(() => {
     const urlParams = new URLSearchParams(location.search);
